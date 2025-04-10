@@ -1,0 +1,72 @@
+{
+  "Free": [
+    {
+      "title": "Free Course 1",
+      "desc": "Intro to programming at no cost."
+    },
+    {
+      "title": "Free Course 2",
+      "desc": "HTML & CSS for beginners."
+    },
+    {
+      "title": "Free Course 3",
+      "desc": "JavaScript basics made easy."
+    }
+  ],
+  "New to coding": [
+    {
+      "title": "Coding 101",
+      "desc": "Absolute beginner's roadmap."
+    },
+    {
+      "title": "Logic Building",
+      "desc": "Learn how to think like a programmer."
+    },
+    {
+      "title": "First Project",
+      "desc": "Build your first website today!"
+    }
+  ],
+  "Most Popular": [
+    {
+      "title": "Python Mastery",
+      "desc": "Most loved language by devs."
+    },
+    {
+      "title": "Web Dev Bootcamp",
+      "desc": "Top-rated full-stack course."
+    },
+    {
+      "title": "AI for All",
+      "desc": "Trending in 2025."
+    }
+  ],
+  "Skill Paths": [
+    {
+      "title": "Frontend Path",
+      "desc": "HTML, CSS, JS, React, and more."
+    },
+    {
+      "title": "Backend Path",
+      "desc": "Node.js, Databases, APIs."
+    },
+    {
+      "title": "DevOps Path",
+      "desc": "CI/CD, Docker, and Cloud."
+    }
+  ],
+  "Career Paths": [
+    {
+      "title": "Full Stack Dev",
+      "desc": "Become job-ready in 6 months."
+    },
+    {
+      "title": "Data Scientist",
+      "desc": "For math & stats lovers."
+    },
+    {
+      "title": "Cybersecurity",
+      "desc": "Protect the digital world."
+    }
+  ]
+}
