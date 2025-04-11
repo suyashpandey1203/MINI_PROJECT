@@ -261,17 +261,17 @@ const Homepage = () => {
             <img
               src={pic1}
               alt="pic1"
-              className="w-28 sm:w-56 md:w-72 lg:w-80 border border-gray-500 h-auto rounded-lg object-cover transform rotate-12"
+              className="w-28 sm:w-56 md:w-72 lg:w-80 border border-gray-500 h-auto rounded-lg object-cover transform rotate-12 transition-transform duration-300 hover:scale-120  hover:rotate-0"
             />
             <img
               src={pic3}
               alt="pic3"
-              className="w-28 sm:w-56 md:w-72 lg:w-80 border border-gray-500 h-auto rounded-lg object-cover transform rotate-6"
+              className="w-28 sm:w-56 md:w-72 lg:w-80 border border-gray-500 h-auto rounded-lg object-cover transform rotate-6 transition-transform duration-300 hover:scale-120 hover:rotate-0"
             />
             <img
               src={pic2}
               alt="pic2"
-              className="w-28 sm:w-56 md:w-72 lg:w-80 border border-gray-500 h-auto rounded-lg object-cover transform -rotate-12"
+              className="w-28 sm:w-56 md:w-72 lg:w-80 border border-gray-500 h-auto rounded-lg object-cover transform -rotate-12 transition-transform duration-300 hover:scale-120 hover:rotate-0"
             />
           </div>
         </div>

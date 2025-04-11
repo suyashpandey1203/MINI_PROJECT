@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillBuild } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
@@ -8,14 +8,25 @@ import { useSelector } from "react-redux";
 import { MdOutlineDashboard } from "react-icons/md";
 import { IoMdLogOut } from "react-icons/io";
 import { LogOut } from "lucide-react";
+import { apiConnector } from "../../Services/ApiConnector";
+import { categories } from "../../Services/Apis";
 
 const Navbar = () => {
   const { token } = useSelector((state) => state.auth);
   const { user } = useSelector((state) => state.profile);
-  // const { totalItems } = useSelector((state) => state.cart);
-  const totalItems = 10;
+  const { totalItems } = useSelector((state) => state.cart);
+  const [subLinks, setSubLinks] = useState([]);
 
-  const [isLogin, setIsLogin] = useState(false);
+  useEffect(() => {
+    async () => {
+      try {
+        const res = await apiConnector("GET", categories.CATEGORIES_API);
+        setSubLinks(res.data.data.categories);
+      } catch (error) {
+        console.log("Error in fetching categories", error);
+      }
+    };
+  }, []);
 
   const programmingCourses = [
     "Python for Beginners",
